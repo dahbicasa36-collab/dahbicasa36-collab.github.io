@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
   <meta charset="UTF-8">
   <title>Casa The Untamed</title>
@@ -10,6 +10,7 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 40px;
+      direction: rtl;
       text-align: right;
     }
 
@@ -21,69 +22,59 @@
 
     .header img {
       width: 90px;
-      height: auto;
-    }
-
-    .buttons {
-      margin-top: 15px;
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    .buttons a {
-      text-decoration: none;
-      background: #000;
-      color: #fff;
-      padding: 10px 18px;
-      border-radius: 25px;
-      font-size: 14px;
-    }
-
-    .buttons a.secondary {
-      background: #555;
     }
 
     .gallery {
       margin-top: 40px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
     }
 
     .gallery img {
       width: 100%;
-      border-radius: 12px;
+      max-width: 600px;
+      border-radius: 14px;
+    }
+
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      padding: 10px 18px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 14px;
+      color: white;
+    }
+
+    .btn-dark {
+      background: black;
+    }
+
+    .btn-gray {
+      background: #666;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- الشعار + العنوان -->
   <div class="header">
-    <img src="logo.png" alt="Casa The Untamed Logo">
+    <img src="شعار دائري صغير.png" alt="Casa The Untamed Logo">
     <div>
       <h1>Casa The Untamed</h1>
       <p>الموقع قيد الإنشاء</p>
 
-      <!-- الأزرار -->
       <div class="buttons">
-        <a href="https://linktr.ee/casatheuntame" target="_blank">
-          🌐 كل الروابط
-        </a>
-        <a href="https://theuntamed.com/?referral=wFpNEb" target="_blank" class="secondary">
-          🛒 المتجر الرسمي
-        </a>
+        <a class="btn btn-gray" href="#">🛒 المتجر الرسمي</a>
+        <a class="btn btn-dark" href="https://linktr.ee/casatheuntame">🌐 كل الروابط</a>
       </div>
     </div>
   </div>
 
-  <!-- الصور -->
   <div class="gallery">
-    <img src="image1.jpg" alt="">
-    <img src="image2.jpg" alt="">
-    <img src="image3.jpg" alt="">
+    <img src="1280x640.png" alt="Casa The Untamed Image">
   </div>
 
 </body>
