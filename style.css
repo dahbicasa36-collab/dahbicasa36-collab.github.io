@@ -132,11 +132,15 @@ body {
 .top-links a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 15px;
-  font-weight: 500;
-  opacity: 0.9;
+  font-size: 17px;          /* كبرنا الخط */
+  font-weight: 600;         /* أوضح */
+  opacity: 0.95;
   transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 6px;                 /* مسافة بين الأيقونة والكلمة */
 }
+
 
 .top-links a:hover {
   opacity: 1;
