@@ -93,6 +93,16 @@ body {
   background: #fff;
   color: #000;
 }
+/* Contact Button */
+.contact-btn {
+  background: #ffffff;
+  color: #000000;
+  font-weight: 600;
+}
+
+.contact-btn:hover {
+  transform: scale(1.05);
+}
 
 .btn:hover {
   transform: scale(1.05);
