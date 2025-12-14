@@ -20,8 +20,28 @@
     }
 
     .header img {
-      width: 80px;
+      width: 90px;
       height: auto;
+    }
+
+    .buttons {
+      margin-top: 15px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      background: #000;
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 25px;
+      font-size: 14px;
+    }
+
+    .buttons a.secondary {
+      background: #555;
     }
 
     .gallery {
@@ -33,7 +53,7 @@
 
     .gallery img {
       width: 100%;
-      border-radius: 10px;
+      border-radius: 12px;
     }
   </style>
 </head>
@@ -46,6 +66,16 @@
     <div>
       <h1>Casa The Untamed</h1>
       <p>الموقع قيد الإنشاء</p>
+
+      <!-- الأزرار -->
+      <div class="buttons">
+        <a href="https://linktr.ee/casatheuntame" target="_blank">
+          🌐 كل الروابط
+        </a>
+        <a href="https://theuntamed.com/?referral=wFpNEb" target="_blank" class="secondary">
+          🛒 المتجر الرسمي
+        </a>
+      </div>
     </div>
   </div>
 
