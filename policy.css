@@ -71,3 +71,18 @@ hr {
     font-size: 26px;
   }
 }
+/* Brand touch for headings */
+h1 {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 2px;
+  background: #000000; /* لون الهوية */
+}
