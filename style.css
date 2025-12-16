@@ -217,3 +217,8 @@ body {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
   background: #000;
 }
+.nav-logo img {
+  height: 42px;
+  width: auto;
+  border-radius: 50%;
+}
