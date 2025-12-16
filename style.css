@@ -4,29 +4,18 @@
   box-sizing: border-box;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
 body {
-  background: #000;
+  overflow: hidden;
 }
 
-.page {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* وسط عمودياً */
-  align-items: center;     /* وسط أفقياً */
-}
-
-
-/* LOGO */
-.logo {
-  width: 260px;       /* كبير وباين */
-  margin: 40px 0;
-}
-
-/* IMAGE */
-.hero {
-  width: 100%;
-  height: auto;
+.full-image {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
   display: block;
 }
