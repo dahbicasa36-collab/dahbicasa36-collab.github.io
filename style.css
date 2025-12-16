@@ -15,7 +15,8 @@ html, body {
 .hero {
   width: 100%;
   height: 100vh;
-  background-image: url("image%20lux.png"); /* اسم الصورة كما هو */
+ background-image: url("_1280x640.png");
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
