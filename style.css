@@ -1,4 +1,4 @@
-/* Reset */
+/* ===== Reset ===== */
 * {
   margin: 0;
   padding: 0;
@@ -7,9 +7,13 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background: #0f0f0f;
+  color: #ffffff;
+  line-height: 1.8;
+  direction: rtl;
 }
 
-/* Hero */
+/* ===== Hero ===== */
 .hero {
   width: 100vw;
   height: 100vh;
@@ -19,160 +23,138 @@ body {
   position: relative;
 }
 
-/* Overlay */
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.55);
 }
 
-/* Content */
-.hero-content {
-  position: relative;
-  z-index: 1;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #ffffff;
-  padding: 20px;
-}
-
-/* Logo (نهائي – بلا بياض) */
-.logo img {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  background: transparent;
-  border-radius: 50%;
-  display: block;
-  margin-bottom: 20px;
-}
-
-/* Titles */
-.title {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  letter-spacing: 1px;
-  text-shadow: 0 4px 20px rgba(0,0,0,0.6);
-}
-
-.subtitle {
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 30px;
-  opacity: 0.9;
-  direction: rtl;
-}
-
-/* Buttons */
-.buttons {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.btn {
-  padding: 12px 26px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-size: 16px;
-  transition: 0.3s ease;
-}
-
-.btn-dark {
-  background: #000;
-  color: #fff;
-}
-
-.btn-light {
-  background: #fff;
-  color: #000;
-}
-/* Contact Button */
-.contact-btn {
-  background: #ffffff;
-  color: #000000;
-  font-weight: 600;
-}
-
-.contact-btn:hover {
-  transform: scale(1.05);
-}
-
-.btn:hover {
-  transform: scale(1.05);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .title {
-    font-size: 32px;
-  }
-
-  .subtitle {
-    font-size: 16px;
-  }
-}
-/* Top navigation links */
+/* ===== Top Navigation ===== */
 .top-links {
   position: absolute;
   top: 20px;
-  right: 40px;
-  z-index: 5;
+  right: 30px;
   display: flex;
-  gap: 25px;
-  flex-wrap: wrap;
-  flex-direction: row-reverse; /* هذا هو الحل */
+  gap: 20px;
+  z-index: 5;
 }
-
 
 .top-links a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 17px;          /* كبرنا الخط */
-  font-weight: 600;         /* أوضح */
-  opacity: 0.95;
+  font-size: 15px;
+  opacity: 0.9;
   transition: 0.3s;
-  display: flex;
-  align-items: center;
-  gap: 6px;                 /* مسافة بين الأيقونة والكلمة */
 }
-
 
 .top-links a:hover {
   opacity: 1;
   text-decoration: underline;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .top-links {
-    right: 15px;
-    gap: 12px;
-  }
-
-  .top-links a {
-    font-size: 14px;
-  }
-}
-.hero-content .title {
+/* ===== Hero Content ===== */
+.hero-content {
   position: relative;
-  padding-bottom: 12px;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
 }
 
-.hero-content .title::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 50%;
-  transform: translateX(50%);
+.logo img {
   width: 80px;
-  height: 2px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+  opacity: 0.85;
+}
+
+/* ===== Buttons ===== */
+.buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 30px;
   background: #ffffff;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Pages Content ===== */
+.container {
+  max-width: 900px;
+  margin: 60px auto;
+  background: #ffffff;
+  color: #111;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  background: #0b0b0b;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
+}
+
+.site-footer p {
+  font-size: 14px;
   opacity: 0.7;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .top-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    right: 10px;
+    left: 10px;
+  }
 }
