@@ -74,10 +74,18 @@ nav {
 }
 
 nav a {
-  font-size: 2rem;
+  font-size: 1.3rem; /* تكبير الخط */
   text-decoration: none;
-  color: #22c55e;
-  transition: transform 0.3s, color 0.3s;
+  color: #ffffff; /* أبيض نقي */
+  background: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+nav a:hover {
+  transform: scale(1.05);
 }
 
 nav a:hover {
