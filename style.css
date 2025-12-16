@@ -13,8 +13,10 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center; /* وسط عمودياً */
+  align-items: center;     /* وسط أفقياً */
 }
+
 
 /* LOGO */
 .logo {
