@@ -198,3 +198,8 @@ body {
   background: #222;
   transform: scale(1.05);
 }
+.nav-logo img {
+  height: 42px;
+  width: auto;
+  border-radius: 50%;
+}
