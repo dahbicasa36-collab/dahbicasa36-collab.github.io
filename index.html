@@ -5,14 +5,79 @@
   <title>casaTheUntamed</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: #0f172a;
+      color: #e2e8f0;
+    }
+
+    .hero-section {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: url('hero.jpg') center center / cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero-section img.logo {
+      max-width: 180px;
+      margin-bottom: 20px;
+    }
+
+    .hero-section h1 {
+      font-size: 2.5rem;
+      color: #facc15;
+      margin: 0;
+    }
+
+    .hero-section p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      padding: 30px 0;
+      background-color: #0f172a;
+    }
+
+    a {
+      text-decoration: none;
+      color: #22c55e;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #16a34a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+      background-color: #0f172a;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="شعار Casa The Untamed" class="logo">
+
+  <section class="hero-section">
+    <img src="logo.png" class="logo">
     <h1>casaTheUntamed</h1>
     <p>منصة تجمع بين الفن، الطبيعة، والفرص الرقمية في المغرب</p>
-    <img src="hero.jpg" alt="صورة واجهة Casa The Untamed" class="hero">
-  </header>
+  </section>
 
   <nav>
     <a href="about.html">🏢 التعريف بالشركة</a>
@@ -26,5 +91,6 @@
   <footer>
     © 2025 Casa The Untamed — جميع الحقوق محفوظة
   </footer>
+
 </body>
 </html>
