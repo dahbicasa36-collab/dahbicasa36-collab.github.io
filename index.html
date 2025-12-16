@@ -9,13 +9,38 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #000; /* خلفية سوداء بسيطة */
-      color: #fff;
       text-align: center;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+      padding: 15px 30px;
+      background: transparent;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      font-size: 1rem;
+      text-decoration: none;
+      color: #22c55e;
+      background: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      color: #16a34a;
+      transform: scale(1.05);
     }
 
     .hero-section {
-      position: relative;
       width: 100%;
       height: 100vh;
       background: url('hero.jpg') center center / cover no-repeat;
@@ -23,57 +48,22 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      overflow: hidden;
-    }
-
-    .hero-section::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.4);
-      z-index: 1;
     }
 
     .hero-section img.logo {
       max-width: 180px;
       margin-bottom: 20px;
-      position: relative;
-      z-index: 2;
     }
 
     .hero-section h1 {
       font-size: 2.5rem;
       color: #facc15;
       margin: 0;
-      position: relative;
-      z-index: 2;
     }
 
     .hero-section p {
       font-size: 1.2rem;
       margin-top: 10px;
-      position: relative;
-      z-index: 2;
-    }
-
-    nav {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      gap: 10px;
-      padding: 20px;
-    }
-
-    nav a {
-      font-size: 1.2rem;
-      text-decoration: none;
-      color: #22c55e;
-      transition: transform 0.3s, color 0.3s;
-    }
-
-    nav a:hover {
-      color: #16a34a;
-      transform: scale(1.05);
     }
 
     footer {
@@ -85,12 +75,6 @@
 </head>
 <body>
 
-  <section class="hero-section">
-    <img src="logo.png" class="logo">
-    <h1>casaTheUntamed</h1>
-    <p>منصة تجمع بين الفن، الطبيعة، والفرص الرقمية في المغرب</p>
-  </section>
-
   <nav>
     <a href="about.html">🏛️ التعريف بالشركة</a>
     <a href="opportunity.html">💼 فرصة عمل</a>
@@ -99,6 +83,12 @@
     <a href="data-deletion.html">🗑️ سياسة حذف البيانات</a>
     <a href="https://linktr.ee/casatheuntamed" target="_blank">📡 تواصل معنا عبر Linktree</a>
   </nav>
+
+  <section class="hero-section">
+    <img src="logo.png" class="logo">
+    <h1>casaTheUntamed</h1>
+  
+   </section>
 
   <footer>
     © 2025 Casa The Untamed – جميع الحقوق محفوظة
