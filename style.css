@@ -222,3 +222,14 @@ body {
   width: auto;
   border-radius: 50%;
 }
+.nav-logo img {
+  height: 42px;
+  width: auto;
+  border-radius: 50%;
+  display: block;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
