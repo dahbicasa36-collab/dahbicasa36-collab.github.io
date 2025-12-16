@@ -1,94 +1,30 @@
-/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, sans-serif;
 }
 
-/* ===== BODY ===== */
 body {
-  background: #ffffff;
-  color: #111;
-  line-height: 1.6;
-  direction: rtl;
-}
-
-/* ===== HEADER ===== */
-.site-header {
   background: #000;
-  padding: 10px 20px;
 }
 
-.nav-bar {
-  max-width: 1200px;
-  margin: auto;
+.page {
+  width: 100%;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
 }
 
-/* ===== LOGO ===== */
-.nav-logo img {
-  height: 48px;
-  display: block;
+/* LOGO */
+.logo {
+  width: 260px;       /* كبير وباين */
+  margin: 40px 0;
 }
 
-/* ===== MENU LINKS ===== */
-.nav-links {
-  display: flex;
-  gap: 18px;
-}
-
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 15px;
-  transition: opacity 0.2s ease;
-}
-
-.nav-links a:hover {
-  opacity: 0.7;
-}
-
-/* ===== HERO ===== */
-.hero img {
+/* IMAGE */
+.hero {
   width: 100%;
   height: auto;
   display: block;
-}
-
-/* ===== CONTENT ===== */
-.content {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 0 20px;
-  text-align: center;
-}
-
-.content h1 {
-  font-size: 32px;
-  margin-bottom: 15px;
-}
-
-.content p {
-  font-size: 18px;
-  color: #444;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-  .nav-bar {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .content h1 {
-    font-size: 26px;
-  }
 }
