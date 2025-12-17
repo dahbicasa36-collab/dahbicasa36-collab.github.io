@@ -78,3 +78,12 @@ footer {
   opacity: 0.7;
   font-family: 'Raleway', sans-serif;
 }
+/* تعطيل الحركة لزر الصفحة الرئيسية والعنوان الرئيسي */
+.no-hover {
+  transition: none !important;
+}
+
+.no-hover:hover {
+  background-color: #ff914d !important; /* يبقى بنفس اللون الأصلي */
+  transform: none !important;           /* بدون تكبير أو حركة */
+}
