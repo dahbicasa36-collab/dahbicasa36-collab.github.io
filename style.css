@@ -45,7 +45,7 @@ body {
   margin-bottom: 25px;
 }
 
-/* الأزرار */
+/* زر ممتلئ */
 .btn-cta {
   display: inline-block;
   margin: 10px;
@@ -62,6 +62,26 @@ body {
 .btn-cta:hover {
   background-color: #8c4f3a; /* درجة أغمق عند المرور */
   color: #fff;
+}
+
+/* زر بإطار */
+.btn-outline {
+  display: inline-block;
+  margin: 10px;
+  padding: 14px 28px;
+  background-color: transparent; /* خلفية شفافة */
+  border: 2px solid #a1694f; /* إطار بنفس اللون */
+  color: #a1694f; /* النص بنفس اللون */
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: #a1694f; /* عند المرور الخلفية تتلون */
+  color: #fff; /* النص يصبح أبيض */
 }
 
 /* الفوتر */
