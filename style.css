@@ -4,35 +4,34 @@ body {
   font-family: 'Raleway', sans-serif;
   text-align: center;
   color: #ffffff;
+  background-color: #000000;
 }
 
 /* شريط التنقل */
 nav {
   display: flex;
-  justify-content: flex-end;
-  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
   padding: 20px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 10;
 }
 
 /* الروابط كأزرار CTA */
 nav a {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-decoration: none;
   color: #ffffff;
-  background: #ff914d; /* اللون المطلوب */
-  padding: 8px 16px;
-  border-radius: 6px;
+  background-color: #ff914d;
+  padding: 10px 18px;
+  border-radius: 8px;
   font-weight: bold;
-  transition: transform 0.3s, background 0.3s;
+  font-family: 'Raleway', sans-serif;
+  transition: transform 0.3s, background-color 0.3s;
 }
 
 /* عند المرور */
 nav a:hover {
-  background: #e6732d; /* درجة أغمق من نفس اللون */
+  background-color: #e6732d;
   transform: scale(1.05);
 }
 
@@ -53,22 +52,17 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-/* العنوان الرئيسي كزر CTA */
+/* العنوان الرئيسي كزر */
 .hero-section h1 {
   display: inline-block;
   font-size: 2.5rem;
-  font-family: 'Raleway', sans-serif;
   color: #ffffff;
-  background: #ff914d;
-  padding: 10px 20px;
-  border-radius: 8px;
+  background-color: #ff914d;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-family: 'Raleway', sans-serif;
   margin: 0;
-  transition: transform 0.3s, background 0.3s;
-}
-
-.hero-section h1:hover {
-  background: #e6732d;
-  transform: scale(1.05);
+  transition: transform 0.3s, background-color 0.3s;
 }
 
 /* الفوتر */
@@ -77,13 +71,15 @@ footer {
   font-size: 0.9rem;
   opacity: 0.7;
   font-family: 'Raleway', sans-serif;
+  text-align: center;
 }
+
 /* تعطيل الحركة لزر الصفحة الرئيسية والعنوان الرئيسي */
 .no-hover {
   transition: none !important;
 }
 
 .no-hover:hover {
-  background-color: #ff914d !important; /* يبقى بنفس اللون الأصلي */
-  transform: none !important;           /* بدون تكبير أو حركة */
+  background-color: #ff914d !important;
+  transform: none !important;
 }
