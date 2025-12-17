@@ -83,3 +83,18 @@ footer {
   background-color: #ff914d !important;
   transform: none !important;
 }
+/* تعطيل الحركة لزر الصفحة الرئيسية والعنوان الرئيسي */
+.no-hover {
+  transition: none !important;
+}
+
+.no-hover:hover {
+  background-color: #ff914d !important; /* يبقى بنفس اللون الأصلي */
+  transform: none !important;           /* بدون تكبير أو حركة */
+}
+
+/* تكبير خط العنوان الرئيسي ليكون مختلف عن باقي الأزرار */
+.hero-section h1.no-hover {
+  font-size: 3rem;   /* أكبر من باقي الأزرار */
+  font-weight: 700;  /* خط غليظ */
+}
