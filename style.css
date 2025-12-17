@@ -1,86 +1,83 @@
-/* الخط العام */
-body {
+/* إعدادات عامة */
+html, body {
   margin: 0;
-  font-family: 'Raleway', sans-serif;
-  text-align: center;
-  color: #ffffff;
-  background-color: #000000;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  color: #000;
 }
 
-/* شريط التنقل */
-nav {
+/* اللون الموحّد */
+:root {
+  --brand-color: #a1694f;
+}
+
+/* الشريط العلوي */
+.navbar {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 12px;
-  padding: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
 }
 
-/* الروابط كأزرار CTA */
-nav a {
-  font-size: 1.1rem;
+.navbar a {
   text-decoration: none;
-  color: #ffffff;
-  background-color: #ff914d;
-  padding: 10px 18px;
-  border-radius: 8px;
+  color: var(--brand-color);
+  border: 2px solid var(--brand-color);
+  padding: 8px 16px;
+  border-radius: 16px;
   font-weight: bold;
-  font-family: 'Raleway', sans-serif;
-  transition: transform 0.3s, background-color 0.3s;
+  transition: 0.3s ease;
 }
 
-/* عند المرور (الحركة لباقي الأزرار فقط) */
-nav a:hover {
-  background-color: #e6732d;
-  transform: scale(1.05);
-}
-
-/* تعطيل الحركة لزر الصفحة الرئيسية */
-nav a.no-hover {
-  transition: none !important;
-}
-
-nav a.no-hover:hover {
-  background-color: #ff914d !important;
-  transform: none !important;
+.navbar a:hover {
+  background-color: var(--brand-color);
+  color: #ffffff;
 }
 
 /* القسم الرئيسي */
-.hero-section {
-  width: 100%;
-  height: 100vh;
-  background: url('hero.jpg') center center / cover no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.hero {
+  text-align: center;
+  padding: 80px 20px;
 }
 
-/* الشعار */
-.hero-section img.logo {
-  max-width: 180px;
+/* العناوين */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--brand-color);
   margin-bottom: 20px;
 }
 
-/* العنوان الرئيسي */
-.hero-section h1.no-hover {
+/* النص */
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Button / CTA */
+.btn-cta {
   display: inline-block;
-  font-size: 3rem;   /* أكبر من باقي الأزرار */
-  font-weight: 700;  /* خط غليظ */
+  background-color: var(--brand-color);
   color: #ffffff;
-  background-color: #ff914d;
   padding: 14px 28px;
-  border-radius: 10px;
-  font-family: 'Raleway', sans-serif;
-  margin: 0;
-  transition: none !important; /* بدون حركة */
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: #8f5a43;
 }
 
 /* الفوتر */
 footer {
-  margin-top: 40px;
-  font-size: 0.9rem;
-  opacity: 0.7;
-  font-family: 'Raleway', sans-serif;
   text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-top: 1px solid #eee;
+  font-size: 14px;
 }
