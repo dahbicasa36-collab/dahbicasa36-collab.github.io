@@ -1,7 +1,7 @@
-/* تنسيق عام للصفحة */
+/* الخط العام */
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
   color: #ffffff;
 }
@@ -18,22 +18,22 @@ nav {
   z-index: 10;
 }
 
-/* الروابط */
+/* الروابط كأزرار CTA */
 nav a {
-  font-size: 1.3rem; /* تكبير الخط */
+  font-size: 1.2rem;
   text-decoration: none;
-  color: #ffffff; /* أبيض نقي */
-  background: none;
-  padding: 6px 12px;
-  border-radius: 5px;
+  color: #ffffff;
+  background: #ff914d; /* اللون المطلوب */
+  padding: 8px 16px;
+  border-radius: 6px;
   font-weight: bold;
-  transition: transform 0.3s;
+  transition: transform 0.3s, background 0.3s;
 }
 
 /* عند المرور */
 nav a:hover {
-  color: #ffffff; /* يبقى أبيض */
-  transform: scale(1.05); /* تكبير خفيف */
+  background: #e6732d; /* درجة أغمق من نفس اللون */
+  transform: scale(1.05);
 }
 
 /* القسم الرئيسي */
@@ -53,11 +53,22 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-/* العنوان */
+/* العنوان الرئيسي كزر CTA */
 .hero-section h1 {
+  display: inline-block;
   font-size: 2.5rem;
-  color: #ffffff; /* أبيض نقي */
+  font-family: 'Raleway', sans-serif;
+  color: #ffffff;
+  background: #ff914d;
+  padding: 10px 20px;
+  border-radius: 8px;
   margin: 0;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.hero-section h1:hover {
+  background: #e6732d;
+  transform: scale(1.05);
 }
 
 /* الفوتر */
@@ -65,4 +76,5 @@ footer {
   margin-top: 40px;
   font-size: 0.9rem;
   opacity: 0.7;
+  font-family: 'Raleway', sans-serif;
 }
