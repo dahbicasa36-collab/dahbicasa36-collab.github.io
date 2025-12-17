@@ -1,88 +1,74 @@
 /* إعدادات عامة */
-html, body {
+body {
+  font-family: "Tahoma", Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
-  font-family: Arial, sans-serif;
-  color: #000;
+  background-color: #fdfdfd;
+  color: #333;
+  direction: rtl;
 }
 
-/* اللون الموحّد */
-:root {
-  --brand-color: #a1694f;
-}
-
-/* الشريط العلوي */
+/* شريط التنقل */
 .navbar {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
+  background-color: #2e7d32; /* أخضر غامق */
   padding: 15px;
-  background-color: #ffffff;
-  border-bottom: 1px solid #eee;
+  text-align: center;
 }
 
 .navbar a {
+  color: #fff;
   text-decoration: none;
-  color: var(--brand-color);
-  border: 2px solid var(--brand-color);
-  padding: 10px 22px;
-  border-radius: 18px;
+  margin: 0 12px;
   font-weight: bold;
-  transition: 0.3s ease;
-  display: inline-block;
+  transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-  background-color: var(--brand-color);
-  color: #ffffff;
+  color: #ffd700; /* ذهبي عند المرور */
 }
 
-/* القسم الرئيسي */
+/* قسم البطل (Hero Section) */
 .hero {
   text-align: center;
-  padding: 80px 20px;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 2.8em;
+  margin-bottom: 15px;
 }
 
 .hero p {
-  max-width: 600px;
-  margin: 0 auto 30px;
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 1.3em;
+  margin-bottom: 25px;
 }
 
-/* العناوين */
-h1, h2, h3, h4, h5, h6 {
-  color: var(--brand-color);
-  margin-bottom: 20px;
-}
-
-/* زر الدعوة للعمل (CTA) */
-.btn-cta,
-button {
-  background-color: #ffffff;
-  color: var(--brand-color);
-  border: 2px solid var(--brand-color);
-  padding: 14px 28px;
-  border-radius: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  cursor: pointer;
-  transition: 0.3s ease;
+/* الأزرار */
+.btn-cta {
   display: inline-block;
+  margin: 10px;
+  padding: 14px 28px;
+  background-color: #ffd700; /* ذهبي */
+  color: #2e7d32; /* أخضر غامق */
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
-.btn-cta:hover,
-button:hover {
-  background-color: var(--brand-color);
-  color: #ffffff;
+.btn-cta:hover {
+  background-color: #2e7d32; /* أخضر */
+  color: #fff;
 }
 
 /* الفوتر */
 footer {
+  background-color: #2e7d32;
+  color: #fff;
   text-align: center;
-  padding: 20px;
-  background-color: #ffffff;
-  border-top: 1px solid #eee;
-  font-size: 14px;
+  padding: 15px;
+  margin-top: 40px;
 }
