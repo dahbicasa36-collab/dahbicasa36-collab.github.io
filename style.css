@@ -10,7 +10,7 @@ body {
 
 /* شريط التنقل */
 .navbar {
-  background-color: #2e7d32; /* أخضر غامق */
+  background-color: #a1694f; /* اللون الجديد */
   padding: 15px;
   text-align: center;
 }
@@ -27,11 +27,11 @@ body {
   color: #ffd700; /* ذهبي عند المرور */
 }
 
-/* قسم البطل (Hero Section) */
+/* القسم الرئيسي */
 .hero {
   text-align: center;
   padding: 60px 20px;
-  background: linear-gradient(135deg, #4caf50, #81c784);
+  background: #a1694f; /* اللون الجديد */
   color: #fff;
 }
 
@@ -50,8 +50,8 @@ body {
   display: inline-block;
   margin: 10px;
   padding: 14px 28px;
-  background-color: #ffd700; /* ذهبي */
-  color: #2e7d32; /* أخضر غامق */
+  background-color: #a1694f; /* اللون الجديد */
+  color: #fff;
   text-decoration: none;
   border-radius: 8px;
   font-size: 1.1em;
@@ -60,13 +60,13 @@ body {
 }
 
 .btn-cta:hover {
-  background-color: #2e7d32; /* أخضر */
+  background-color: #8c4f3a; /* درجة أغمق عند المرور */
   color: #fff;
 }
 
 /* الفوتر */
 footer {
-  background-color: #2e7d32;
+  background-color: #a1694f; /* اللون الجديد */
   color: #fff;
   text-align: center;
   padding: 15px;
