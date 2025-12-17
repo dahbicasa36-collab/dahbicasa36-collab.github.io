@@ -81,3 +81,36 @@ footer {
   border-top: 1px solid #eee;
   font-size: 14px;
 }
+/* === الإعداد النهائي === */
+
+/* لون الأزرار */
+:root {
+  --brand-color: #a1694f;
+}
+
+/* العناوين باللون الأبيض */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+}
+
+/* Buttons / CTA */
+button,
+.btn-cta,
+.navbar a {
+  background-color: var(--brand-color);
+  color: #ffffff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Hover */
+button:hover,
+.btn-cta:hover,
+.navbar a:hover {
+  background-color: #8f5a43;
+}
