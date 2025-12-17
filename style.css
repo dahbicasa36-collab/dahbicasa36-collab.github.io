@@ -29,10 +29,20 @@ nav a {
   transition: transform 0.3s, background-color 0.3s;
 }
 
-/* عند المرور */
+/* عند المرور (الحركة لباقي الأزرار فقط) */
 nav a:hover {
   background-color: #e6732d;
   transform: scale(1.05);
+}
+
+/* تعطيل الحركة لزر الصفحة الرئيسية */
+nav a.no-hover {
+  transition: none !important;
+}
+
+nav a.no-hover:hover {
+  background-color: #ff914d !important;
+  transform: none !important;
 }
 
 /* القسم الرئيسي */
@@ -52,17 +62,18 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-/* العنوان الرئيسي كزر */
-.hero-section h1 {
+/* العنوان الرئيسي */
+.hero-section h1.no-hover {
   display: inline-block;
-  font-size: 2.5rem;
+  font-size: 3rem;   /* أكبر من باقي الأزرار */
+  font-weight: 700;  /* خط غليظ */
   color: #ffffff;
   background-color: #ff914d;
-  padding: 12px 24px;
+  padding: 14px 28px;
   border-radius: 10px;
   font-family: 'Raleway', sans-serif;
   margin: 0;
-  transition: transform 0.3s, background-color 0.3s;
+  transition: none !important; /* بدون حركة */
 }
 
 /* الفوتر */
@@ -72,29 +83,4 @@ footer {
   opacity: 0.7;
   font-family: 'Raleway', sans-serif;
   text-align: center;
-}
-
-/* تعطيل الحركة لزر الصفحة الرئيسية والعنوان الرئيسي */
-.no-hover {
-  transition: none !important;
-}
-
-.no-hover:hover {
-  background-color: #ff914d !important;
-  transform: none !important;
-}
-/* تعطيل الحركة لزر الصفحة الرئيسية والعنوان الرئيسي */
-.no-hover {
-  transition: none !important;
-}
-
-.no-hover:hover {
-  background-color: #ff914d !important; /* يبقى بنفس اللون الأصلي */
-  transform: none !important;           /* بدون تكبير أو حركة */
-}
-
-/* تكبير خط العنوان الرئيسي ليكون مختلف عن باقي الأزرار */
-.hero-section h1.no-hover {
-  font-size: 3rem;   /* أكبر من باقي الأزرار */
-  font-weight: 700;  /* خط غليظ */
 }
